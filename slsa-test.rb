@@ -5,20 +5,20 @@
 class SlsaTest < Formula
   desc ""
   homepage ""
-  version "0.0.64"
+  version "0.0.65"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/clover0/slsa-test/releases/download/v0.0.64/slsa-test_darwin_amd64.tar.gz"
-      sha256 "bfd427e31f444770bb991c25441f6011022622160ae9974047310820b5304d89"
+      url "https://github.com/clover0/slsa-test/releases/download/v0.0.65/slsa-test_darwin_amd64.tar.gz"
+      sha256 "b4684546b397b51c5c73bb87975a4b1b5bc13d8107dd570c80be436221f95bbd"
 
       def install
         bin.install "slsa-test"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/clover0/slsa-test/releases/download/v0.0.64/slsa-test_darwin_arm64.tar.gz"
-      sha256 "3a6ee232bd6e4ad760d75763df57b36327605e69c6cea4554eb46eb817bee362"
+      url "https://github.com/clover0/slsa-test/releases/download/v0.0.65/slsa-test_darwin_arm64.tar.gz"
+      sha256 "00705ee605b167431b838da7dfb4a05f1a8b279b537b8cbbe8f4520c12d04822"
 
       def install
         bin.install "slsa-test"
@@ -29,8 +29,8 @@ class SlsaTest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/clover0/slsa-test/releases/download/v0.0.64/slsa-test_linux_amd64.tar.gz"
-        sha256 "91743fafd8b4599ff2c40b982134e9b92a175dfe851e9b382d923212c29382f4"
+        url "https://github.com/clover0/slsa-test/releases/download/v0.0.65/slsa-test_linux_amd64.tar.gz"
+        sha256 "d39bdbe59b5f27778670ca293679682d5206c770d351b74d5af676429953ec1c"
 
         def install
           bin.install "slsa-test"
@@ -39,8 +39,8 @@ class SlsaTest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/clover0/slsa-test/releases/download/v0.0.64/slsa-test_linux_arm64.tar.gz"
-        sha256 "18b2f3b72f0d0c3ba29f2ba8fcd93f429f78d1d0722663af7290f5b4aea540a8"
+        url "https://github.com/clover0/slsa-test/releases/download/v0.0.65/slsa-test_linux_arm64.tar.gz"
+        sha256 "c89c6e67dd8977fadc7e17fb38312bfc19c94e68954cfe60e507e644ecfbb3e4"
 
         def install
           bin.install "slsa-test"
